@@ -36,4 +36,9 @@ class WordCubit extends Cubit<WordState> {
       )
     );
   }
+
+  void removeFavorite(WordPair word) {
+    final updated = List<WordPair>.from(state.favorites)..remove(word);
+    emit(state.copyWith(favorites: updated));
+  }
 }
