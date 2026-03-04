@@ -9,9 +9,11 @@ class FavoritesPage extends StatelessWidget {
       navigationBar: CupertinoNavigationBar(
         middle: Text("Favorites"),
       ),
-      child: Center(
-        child: Text("Favorites page"),
-      ),
+      child: SafeArea(
+        child: Center(
+          child: Text("Favorites page"),
+        ),
+      )
     );
   }
 }

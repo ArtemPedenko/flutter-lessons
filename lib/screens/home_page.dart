@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import '../widgets/word_card.dart';
+import '../layers/word/widgets/word_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,9 +10,11 @@ class HomePage extends StatelessWidget {
       navigationBar: CupertinoNavigationBar(
         middle: Text("HomePage"),
       ),
-      child: Center(
-        child: WordCard(),
-      ),
+      child: SafeArea(
+        child: Center(
+          child: WordCard(),
+        ),
+      )
     );
   }
 }

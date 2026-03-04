@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_lessons/main.dart';
-import 'package:flutter_lessons/screens/favorites_page.dart';
+import 'package:flutter_lessons/layers/word/screens/favorites_page.dart';
 import 'package:flutter_lessons/screens/home_page.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
