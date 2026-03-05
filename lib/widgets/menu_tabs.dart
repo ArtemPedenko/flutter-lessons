@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_lessons/layers/todos/screens/todos_page.dart';
 import 'package:flutter_lessons/main.dart';
 import 'package:flutter_lessons/layers/word/screens/favorites_page.dart';
 import 'package:flutter_lessons/screens/home_page.dart';
@@ -19,6 +20,10 @@ class MainTabs extends StatelessWidget {
           BottomNavigationBarItem(
             icon: Icon(LucideIcons.heart),
             label: 'Favorites'
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(LucideIcons.listTodo),
+              label: 'Todos'
           )
         ]
       ),
@@ -28,6 +33,8 @@ class MainTabs extends StatelessWidget {
             return const HomePage();
           case 1:
             return const FavoritesPage();
+          case 2:
+            return const TodosPage();
           default:
             return const HomePage();
         }
